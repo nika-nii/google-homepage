@@ -1,0 +1,10 @@
+ul {
+	list-style: none;
+}
+li {
+	display: inline-block;
+}
+.logo img {
+	width: 40%;
+	height: 40%;
+}
