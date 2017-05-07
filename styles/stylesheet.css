@@ -1,5 +1,16 @@
+html {
+/*	overflow: hidden;*/
+}
+
 body {
 	position: relative;
+	font-family: Arial;
+	font-size: 14px;
+}
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 .center {
@@ -28,23 +39,45 @@ body {
 .center .searchbox {
 	margin-left: auto;
 	margin-right: auto;
-	width: 350px;
+	width: 450px;
 	height: 30px;
 	padding: 5px;
 	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 	color: #333333;
-	border-style: 1px solid #333333;
+	border: 1px solid #eeeeee;
 	vertical-align: middle;
+	position: relative;
 }
 
 .center .searchbox .searchfield {
 	border-style: none;
 	display: inline-block;
-	height: 20px;
+	height: 30px;
 	padding: 0;
 	margin-left: 0;
 	margin-right: auto;
 	width: 300px;
+	color: #333333;
+}
+
+.center .searchbox .keyboard-button {
+	height: 20px;
+	width: 20px;
+	margin: 10px;
+	background: url("../src/sprite1.png") no-repeat -18px 0;
+	position:absolute;
+	right: 40px;
+	top: 0px;
+}
+
+.center .searchbox .voice-button {
+	height: 20px;
+	width: 20px;
+	margin: 10px;
+	background: url("../src/sprite1.png") no-repeat -38px 0;
+	position:absolute;
+	right: 5px;
+	top: 0px;
 }
 
 .header {
@@ -53,6 +86,7 @@ body {
 	height: 30px;
 	top: 0px;
 	right: 0px;
+	padding: 5px;
 }
 
 .header .menu {
@@ -86,11 +120,12 @@ body {
 }
 
 .header .menu .loginbtn {
-	background-color: blue;
+	background-color: #588bff;
 	border-radius: 3px;
 	font-weight: bold;
 	padding: 5px 10px;
 	margin-left: 10px;
+	margin-right: 10px;
 }
 .header .menu .loginbtn a {
 	text-decoration: none;
@@ -98,6 +133,118 @@ body {
 }
 
 .header .menu .appgrid {
-	display: none; 
+	display: none;
 	position: absolute;
+	top: 50px;
+	right: 50px;
+	border: solid 1px #dddddd;
+	text-align: center;
+	font-size: 12px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.25);
+	background-color: #ffffff;
+	z-index: 100;
+}
+
+.header .menu .appgrid td {
+	padding: 15px;
+	white-space: nowrap;
+}
+
+.header .menu .appgrid div {
+	width: 64px;
+	height: 64px;
+	background-image: url("../src/sprite2.png");
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.my-account {
+	background-position: 0 -1240px;
+}
+
+.app-search {
+	background-position: 0 -2000px;
+}
+
+.maps {
+	background-position: 0 -630px;
+}
+
+.youtube {
+	background-position: 0 -980px;
+}
+
+.play {
+	background-position: 0 -490px;
+}
+
+.news {
+	background-position:  0 -700px;
+}
+
+.mail {
+	background-position: 0 -1040px;
+}
+
+.drive {
+	background-position: 0 -900px;
+}
+
+.calendar {
+	background-position: 0 -1800px;
+}
+
+.gplus {
+	background-position: 0 -420px;
+}
+
+.translate {
+	background-position: 0 -1110px;
+}
+
+.photo {
+	background-position: 0 -70px;
+}
+
+.header .menu .apps:hover .appgrid {
+	display: table;
+}
+
+.footer {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+	height: 60px;
+	background-color: #eeeeee;
+}
+
+.footer .footer-menu {
+	display: inline-block;
+}
+
+.footer .footer-menu li {
+	display: inline-block;
+}
+
+.footer .footer-menu .simple a {
+	display: block;
+	color: #333333;
+	text-decoration: none;
+	margin: 5px 10px;
+}
+
+.footer .left {
+	position: absolute;
+	left: 0px;
+	padding-left: 10px;
+}
+
+.footer .right {
+	position: absolute;
+	right: 0px;
+	padding-right: 10px;
 }
